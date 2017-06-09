@@ -2,13 +2,20 @@
 
 Docker image that has XLR installed, mounts your source code and executes compilation using gradle wrapper.
 
-Supported tags
+## Badges ##
+[![Docker Stars](https://img.shields.io/docker/stars/xebialabs/xlr_dev_compile.svg)]()
+[![Docker Pulls](https://img.shields.io/docker/pulls/xebialabs/xlr_dev_compile.svg)]()
+[![Docker Automated buil](https://img.shields.io/docker/automated/xebialabs/xlr_dev_compile.svg)]()
+[![Docker Build Statu](https://img.shields.io/docker/build/xebialabs/xlr_dev_compile.svg)]()
 
-+ `latest`, `v6.2.0.1`
+## Supported tags ##
+
++ `latest`, `v7.0.0.1`
++ `v6.2.0.1`
 + `v6.0.0.1`
 + `v5.0.1.11`
 
-# Starting #
+## Starting ##
 
 ```
 docker run -v [PROJECT_DIR]:/data -v /home/username/.xlgradle:/root/.gradle xebialabs/xlr_dev_compile
