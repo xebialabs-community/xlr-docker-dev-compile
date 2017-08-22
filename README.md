@@ -10,7 +10,8 @@ Docker image that has XLR installed, mounts your source code and executes compil
 
 ## Supported tags ##
 
-+ `latest`, `v7.0.1.2`
++ `latest`, `v7.1.0.1`
++ `v7.0.1.2`
 + `v7.0.0.1`
 + `v6.2.0.1`
 + `v6.0.0.1`
