@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-
+set -e
 mkdir /build
 cp -r /data/* /build
 
