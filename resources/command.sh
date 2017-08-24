@@ -4,7 +4,9 @@ mkdir /build
 cp -r /data/* /build
 
 cd /build/
-./gradlew clean copyDownloadResources
+if ./gradlew tasks | grep 'copyDownloadResources'; then 
+	./gradlew clean copyDownloadResources
+fi
 
 # Copy downloads into 'plugins'
 if [ -d "/data/build/downloads/plugins" ]; then
