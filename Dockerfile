@@ -1,7 +1,7 @@
-FROM xebialabs/xl-docker-demo-xlr:v7.5.0.1
+FROM xebialabs/xl-docker-demo-xlr:v8.0.0.1
 
 MAINTAINER XebiaLabs <info@xebialabs.com>
-ENV REFRESHED_AT 2018-01-03
+ENV REFRESHED_AT 2018-05-07
 ENV JYTHON_VERSION 2.7.0
 
 RUN apk --update add openjdk8 bash libstdc++
