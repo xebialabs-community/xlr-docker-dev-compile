@@ -16,4 +16,5 @@ VOLUME /data
 VOLUME /root/.gradle
 WORKDIR /data
 
-CMD ["sh","-x","/opt/xlr/command.sh"]
+USER root
+ENTRYPOINT ["sh","-x","/opt/xlr/command.sh"]
