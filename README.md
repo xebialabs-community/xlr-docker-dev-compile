@@ -10,7 +10,8 @@ Docker image that has XLR installed, mounts your source code and executes compil
 
 ## Supported tags ##
 
-+ `latest`, `v8.0.0.1`
++ `latest`
++ `v8.1.0.1`
 + `v7.5.0.1`
 + `v7.2.0.2`
 + `v7.2.0.1`
@@ -24,7 +25,7 @@ Docker image that has XLR installed, mounts your source code and executes compil
 ## Starting ##
 
 ```
-docker run -v [PROJECT_DIR]:/data -v /home/username/.xlgradle:/root/.gradle xebialabs/xlr_dev_compile
+docker run -v [PROJECT_DIR]:/data -v /home/username/.xlgradle:/root/.gradle xebialabsunsupported/xlr_dev_compile
 ```
 
 where:

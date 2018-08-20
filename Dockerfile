@@ -1,10 +1,9 @@
-FROM xebialabs/xl-docker-demo-xlr:v8.0.0.1
+ARG xlr_tag
+FROM xebialabs/xl-release:$xlr_tag
 
-MAINTAINER XebiaLabs <info@xebialabs.com>
-ENV REFRESHED_AT 2018-05-07
 ENV JYTHON_VERSION 2.7.0
 
-RUN apk --update add openjdk8 bash libstdc++
+RUN apt-get update && apt-get install openjdk8 bash libstdc++
 RUN wget -O jython-installer-${JYTHON_VERSION}.jar \
  "http://search.maven.org/remotecontent?filepath=org/python/jython-installer/${JYTHON_VERSION}/jython-installer-${JYTHON_VERSION}.jar" \
  && java -jar jython-installer-${JYTHON_VERSION}.jar -s -t minimum -i mod -i ensurepip -d /usr/local/jython-${JYTHON_VERSION} \
