@@ -10,10 +10,10 @@ fi
 
 # Copy downloads into 'plugins'
 if [ -d "/data/build/downloads/plugins" ]; then
-    cp /build/build/downloads/plugins/* /opt/xl-release-server/plugins/__local__
+    cp /build/build/downloads/plugins/* ${APP_HOME}/plugins/__local__
 fi
 
 # Compile plugin
 cd /build/
-./gradlew test assemble -PxlReleaseHome=/opt/xl-release-server
+./gradlew test assemble -PxlReleaseHome=${APP_HOME}
 cp -rf /build/build/. /data/build
