@@ -8,7 +8,7 @@ TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d "
 }
 " https://hub.docker.com/v2/users/login/ | jq -r .token)
 
-http --follow https://gist.githubusercontent.com/jdewinne/3f13494858fad8b6b2b88ebd3439f1ea/raw/2ca20118482b7790fdbc0a1e3cbe6a3d4e78933b/dockertags > ./dockertags
+#http --follow https://gist.githubusercontent.com/jdewinne/3f13494858fad8b6b2b88ebd3439f1ea/raw/2ca20118482b7790fdbc0a1e3cbe6a3d4e78933b/dockertags > ./dockertags
 chmod +x dockertags
 
 image_name="xebialabsunsupported/xlr_dev_compile"
